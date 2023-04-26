@@ -1,0 +1,11 @@
+write an algorithm to find the sum of positive factors of an integer
+step1:start
+step2:Read the values of n
+step3:Initialize  sum=0 count=0 and i=1
+step4: Repeated the steps (i),(ii) and (iii)until (i<=n)
+         (i)if(n%i==0)
+              count=count+1
+              sum=sum+i
+         (iii)i=i+1
+step5:print(sum)
+step6:end

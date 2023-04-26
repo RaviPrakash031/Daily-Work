@@ -1,0 +1,8 @@
+write a algorithm weather a person eligible for vote r not within age greater than 18
+step1: start
+step2: take the value of age
+step3: if(age>=18)
+         print "person are eligible for vote"
+       else
+         print"person are not eligible for vote"
+step4:end

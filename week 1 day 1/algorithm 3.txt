@@ -1,0 +1,10 @@
+write an algorithm to find the product of first n odd numbers(1,3,5,......)
+step1:start
+step2:Read the  odd values of n
+step3:Initialize product=1 and i=1 count=1
+step4: Repeated the steps (i) and (ii)until  (count<=n)
+         (i)product=product*i
+         (ii)i=i+2
+         (iii)count=count+1
+step5:print(product)
+step6:end
