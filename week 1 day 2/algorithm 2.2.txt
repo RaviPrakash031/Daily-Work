@@ -1,0 +1,14 @@
+write an algorithm to check whether a 3 digit positive integer is an armstrong number or not
+step1:start
+step2:read the vale of 3 digits value of n
+step3:initialize sum=0 and temp=n
+step4:repeated the steps (i) to (iii) 
+          whenever (n!=0)
+      (i)rem=n%10
+      (ii)sum=sum+rem**3
+      (iii)n=n/10
+step5:if sum==temp
+          print "temp is a armstrong number"
+      else 
+          print " temp is not a armstrong number"
+step6:end

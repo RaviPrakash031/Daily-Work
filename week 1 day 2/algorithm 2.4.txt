@@ -1,0 +1,13 @@
+check given number perfect number or not
+step1:start
+step2:read the value of n
+step3:initialize sum=0 and i=1
+step4:Repeated the steps (i),(ii)until (i<n)
+         (i)if(n%i==0)
+              sum=sum+i
+         (ii)i=i+1
+step5:if sum==n
+         print "n is perfect number"
+      else
+          print "n is not a perfect number"
+step6:end

@@ -1,0 +1,11 @@
+write an algorithm for sum  of digits of a positive integer is an armstrong number or not
+step1:start
+step2:read the vale of 3 digits value of n
+step3:initialize sum=0
+step4:repeated the steps (i) to (iii) 
+          whenever (n!=0)
+      (i)rem=n%10
+      (ii)sum=sum+rem
+      (iii)n=n/10
+step5:print "sum"
+step6:end
