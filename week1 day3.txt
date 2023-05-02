@@ -1,0 +1,72 @@
+
+psuedocode to calculate the tds amount accoring to the salary
+begin
+   take variable salary
+   print("enter a salary")
+input salary
+   if(salaray<7,00,000)
+   print("no TDS")
+   else{
+      if(TDS<=3,00,000)
+         TDS1=3,00,000/100*5
+      elseif(TDS<=6,00,000)
+         TDS2=6,00,000/100*10
+      elseif(TdS<=9,00,000)
+         TdS3=9,00,000/100*15
+      elseif(TDS<=12,00,000)
+         TDS4=12,00,000/100*20
+      else
+         print(TDS1+TDS2+TDS3+TDS4)
+
+write a pseudocode for electricity bill
+begin
+   float previous_units,present_units
+   print("enter previous_units")
+   print("enter present_units")
+   input(previous_units)
+   input("present_units")
+   units=present_units-previous_units
+   if(units==0)
+      cost1=50Rs
+   else if(units<=50)
+      cost2=cost1+2.30*units
+   else if(units<=50)
+      cost3=cost2+2.75*units
+   else if(units<=250)
+      cost4=cost3+3.50*units
+   else if(units<=350)
+      cost5=cost4+4.50*units
+   else 
+      total_bill=cost1+cost2+cost3+cost4+cost5
+   total_bill=total_bill+total_bill*18/100
+   print(total_bill)
+end
+
+
+
+
+**tax calculation**
+Begin
+ numeric amount,tds;
+ print("enter the amount")
+ input amount
+ if(amount<=700000){
+     tds=0
+   }
+ else if (amount<=1000000){
+     tds=((5*(amount-700000))/100)
+   }
+ else if(amount<=1300000){
+     tds=((10*(amount-1000000))/100)+15000
+  }
+ else if(amount<=1600000){
+     tds=((15*(amount-1300000))/100)+45000
+  }
+ else if(amount<=1900000){
+     tds=((20*(amount-1600000))/100)+90000
+  }
+ else{
+     tds=((30*(amount-1900000))/100)+150000
+  }
+
+end
