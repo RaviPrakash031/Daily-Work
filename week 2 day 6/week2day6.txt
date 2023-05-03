@@ -1,0 +1,212 @@
+Java input scanner class
+*java.util package-to read input data from user
+1.import java.util.Scanner
+2.Create Scanner class object
+  Scanner sc=new Scanner(System.in);
+
+ 
+
+Scanner class methods for rad the input
+nextInt()
+nextbyte()
+nextshort()
+nextLong()
+nextFloat()
+nextDouble()
+nextBoolean()
+next()
+nextLine() 
+
+ 
+
+OPERATORS AND OPERANDS COMBINED TO FORM EXPRESSIONS
+OPERANDS:
+1.unary-acts on one operand
+2.binary-acts on two operands
+3ternary-acts on three operands
+
+ 
+
+1.ARITHEMATIC OPERATIONS:
+1.+  ->unary plus (binary addition)
+2.-  ->unary minus(binary substraction)
+3.*  ->multiplication
+4./  ->divison
+5.%  ->modulus
+
+ 
+
+2.COMPARISION OR RELATIONAL:
+ 1.> checks whether greater than or not
+  2.<  checks whether lesser than or not
+  3.>= checks whether greater than or equal to 
+  4.<=  checks whether less than  or equal to 
+   5.==  checks whether equal or not
+    != not equal to
+
+ 
+
+3.LOGICAL OPERATORS
+ 
+ logical and-&&
+ logical or-||
+ logical not-!
+logical AND (&&):-
+condition1      condition2      condition1&&condition2
+  T               T                       T
+  F               T                       F
+  T               F                       F
+  F               F                       F
+
+ 
+
+logical OR(||)
+condition1      condition2      condition1||condition2
+  T               T                       T
+  F               T                       T
+  T               F                       T
+  F               F                       F
+
+logical NOT(!)
+condition1      !condition1     
+   T              F
+   F              T
+
+ 
+
+4.ASSIGNMENT OPERATOR
+ =
+SHORTHAND ASSIGNMENT
+ +=
+ *=
+ -=
+ /=
+ %=
+ 
+ex:
+ variable=variable+exp; can be written as +=exp;
+
+ 
+
+5.INCREMENT AND DECREMENT OPERTAOR
+
+ 
+
+++  ->increment by 1
+--  ->decrement by 1
+ ex:
+m=5
+a=m++
+first value of m is assigned to a
+m is incremented by 1
+a=5
+m=6
+
+ 
+
+ex:
+m=5
+a=++m
+first m value will be incremented by 1
+then m is assigned to a
+a=6
+m=6
+
+ 
+
+6.TERNARY OPERATOR
+exp1?exp2:exp3
+4>5?   exp1=exp3,5
+z=(a>b)?(a>c)?a:c):(b>c)b:c to print max value
+ 
+?
+:
+
+ 
+
+7.BITWISE OPERATOR
+bitwise and-&
+bitwise or-|
+bitwise exor
+right shift
+left shiftbitwiseAND(&):- RETURN 1 IF BOTH BITS ARE 1 ELSE RETUENS 0
+X    Y     X&Y
+0    0      0
+0    1      0
+1    0      0
+1    1      1
+
+bitwiseOR(|):- RETURN 1 ANY OF THE BIT IS 1  ELSE RETUENS 0
+X    Y     X|Y
+0    0      0
+0    1      1
+1    0      1
+1    1      1
+bitwiseXOR(^):- RETURN 0 IF BOTH BITS ARE SAME  ELSE RETUNS 1
+X    Y     X^Y
+0    0      0
+0    1      1
+1    0      1
+1    1      0
+
+bitwise compliment(~):- INVERSE OF BIT
+X    ~X     
+0    1      
+1    0    
+
+
+Special operators
+1.instanceof
+chech weather it belongs to that class or not
+ex:name=pavan
+boolean b=nameinstance of the string-true
+boolean c=name instance of int-false
+
+2.new
+create the objects of the class
+
+3.member operator(.)
+object name .method name  
+
+
+Expression Evaluation
+more than one operator in expression
+
+precedence of the operator
+1.* ,/ and % highest than + and -
+2.if * and /,+ and - is there then highest is
+associativity- left to right-arithmetic operators
+3.paranthes will high highest priority
+4.z=++m + m++
+p0st increment has high priority
+
+
+
+
+control statements
+controlling the order of exceution of statements
+1.conditional statements
+2.iterative statements or loops
+
+conditional statements
+1.simple if 
+2.if else
+3.elseif ladder
+4.nested if
+5.switch 
+
+1.simple if 
+syntax:if(condition)
+       { 
+          statement bock;
+        }
+        statement x
+
+if statement block contains many statemets it will be one only
+if single condition is there no need to put curle braces
+
+2.if else condition
+if(condition)
+
+z=(a>b)?(a>c)?a:c):(b>c)b:c
+ 

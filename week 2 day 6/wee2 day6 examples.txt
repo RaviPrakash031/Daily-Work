@@ -1,0 +1,118 @@
+
+1.Area of rectangle
+import java.util.Scanner;
+public class AreaRectangle{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    float length,breadth,area;
+  System.out.println("enter the values of length and breadth");
+    length=sc.nextFloat();
+    breadth=sc.nextFloat();
+    System.out.println("Area of the rectangular ="  +(length*breadth));
+  }
+}
+
+2.Example on Arithmetic Operator
+import java.util.Scanner;
+  public class ArithmeticProgram{
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a,b;
+System.out.println("enter the numbers");
+  a=sc.nextInt();
+  b=sc.nextInt();
+  System.out.println("a+b="+(a+b));
+  System.out.println("a+b="+(a-b));
+  System.out.println("a*b="+(a*b));
+  System.out.println("a/b="+(a/b));
+    }
+}
+
+3.Example on Assignment Operator
+import java.util.Scanner;
+  public class AssignmentProgram{
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a,b;
+System.out.println("enter the numbers");
+  a=sc.nextInt();
+  b=sc.nextInt();
+  System.out.println("a+=b="+(a+=b));
+  System.out.println("a+=b="+(a-=b));
+  System.out.println("a*=b="+(a*=b));
+  System.out.println("a/=b="+(a/=b));
+    }
+}
+
+
+4.Example on increment and Decrement OPerator
+import java.util.Scanner;
+public class OperatorsProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int length,breadth,a,b;
+  System.out.println("enter the values of length and breadth");
+    length=sc.nextInt();
+    breadth=sc.nextInt();
+    a=sc.nextInt();
+    b=sc.nextInt();
+    length=a++;
+    breadth=++b;
+    a=length--;
+    b=--breadth;
+    System.out.println("values of length "+(a++) );
+    System.out.println("values of breadth"+(++b) );
+    System.out.println("values of a "+(length--) );
+    System.out.println("values of b "+(--a) );
+  }
+}
+
+5.Example on Relational Operator
+import java.util.Scanner;
+public class RelationalProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int a,b;
+  System.out.println("enter the values of a and b");
+    a=sc.nextInt();
+    b=sc.nextInt();
+    System.out.println("a is equal tob b:"+(a==b));
+    System.out.println("a is less than or equal to b"+(a>=b));
+    System.out.println("a is greater tha or equal to b"+(a>=b));
+    System.out.println("a is not equal to b"  +(a!=b));
+  }
+}
+
+
+6.Simple Interest Program
+import java.util.Scanner;
+public class SimpleI{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int p,t,r;
+  System.out.println("enter the values of length and breadth");
+    p=sc.nextInt();
+    t=sc.nextInt();
+    r=sc.nextInt();
+    System.out.println("simple interest ="  +(p*t*r/100));
+  }
+}
+
+7.Student Details Program
+import java .util.Scanner;
+public class StudentDetails{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    String name;
+    int age;
+    float score;
+  System.out.println("entet the name,age and score");
+    name=sc.nextLine();
+    age=sc.nextInt();
+    score=sc.nextFloat();
+    System.out.println("the student name: "+(name));
+    System.out.println("the student age: "+(age));
+    System.out.println("the student marks:"+(score));
+    
+  }
+}
