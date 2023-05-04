@@ -1,0 +1,266 @@
+1.WAP to check maximum of two numbers
+import java.util.Scanner;
+public class MaxOfTwoProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int a,b;
+  System.out.println("enter the values of a and b");
+    a=sc.nextInt();
+    b=sc.nextInt();
+    if (a>b){
+      System.out.println("a is bigger="+a);
+    }
+    else{ 
+      System.out.println("b is bigger="+b);
+    }
+  }
+}
+
+2.WAP to chek max of three numbers
+import java.util.Scanner;
+public class MaxOfThree{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int a,b,c;
+  System.out.println("enter the values of a, b and c");
+    a=sc.nextInt();
+    b=sc.nextInt();
+    c=sc.nextInt();
+    if (a>=b && a>=c){
+      System.out.println("a is bigger="+a);
+    }
+    if (b>=a && b>=c){ 
+      System.out.println("b is bigger="+b);
+    }
+    if (c>=a && c>=b){
+      System.out.println("c is bigger="+c);
+    }
+  }
+}
+
+
+3.WAP weather number is positive negative or zero
+import java.util.Scanner;
+public class PosNegProgram
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner(System.in);
+  int a;
+  System.out.println("enter the value of a");
+  a = sc.nextInt();
+   if(a>0)
+   {
+     System.out.println("a is positive = " + a);
+   }
+  else if(a<0)
+  {
+     System.out.println("a is negative = " + a);
+  }
+   
+ else
+  {
+    System.out.println("a is equalto 0 = " + a);
+  }
+}
+}
+
+4.WAP to check even number or not
+import java.util.Scanner;
+public class EvenOddProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int a;
+    System.out.println("Enter value of a");
+    a=sc.nextInt();
+    if (a%2==0){
+      System.out.println("a is even number");
+    }
+    else{
+      System.out.println("a is odd number");
+    }
+  }
+}
+
+5.WAP to check a number is divisible by 5 or not
+import java.util.Scanner;
+public class DivisibleProgram{
+    public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int a;
+    System.out.println("enter the number a");
+    a= sc.nextInt();
+    if(a%5==0 && a%11==0){
+      System.out.println("number is divisible by 5 and 11="+a);
+    }
+    else{
+      System.out.println("number is not divisible by 5 and 11="+a);
+    }
+  }
+}
+
+
+7. WAP to check whether a character is alphabet or not.
+import java.util.Scanner;
+public class AlphabetProgram
+{
+    public static void main(String args[])
+    {
+        char c;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter any character");
+        c=s.next().charAt(0);
+        
+        if( (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+                    System.out.println(c + " is an alphabet.");
+            else
+                    System.out.println(c + " is not an alphabet.");
+     }
+}
+
+8. WAP to input any alphabet and check whether it is vowel or    consonant.
+import java.util.*;
+  public class VowelsProgram{
+    public static void main(String args[])
+    { 
+      char c;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter any  character");
+      c=s.next().charAt(0);
+      if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+        if ((c=='a' || c=='e' || c=='i' || c=='o' || c=='u')|| (c=='A'|| c=='E' || c=='I' 
+           || c=='O' ||c=='U')){
+          System.out.println(c+" is an vowels");
+        }
+        else{
+          System.out.println(c+" is an consonant");
+        }
+      }
+      else {
+        System.out.println(c+" is  not an alphabet");
+      }
+    }
+  }
+
+9. WAP to input any character and check whether it is alphabet, digit    or special character.
+import java.util.Scanner;
+public class DigitProgram
+{
+    public static void main(String args[])
+    {
+        char ch;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any  character");
+        ch=sc.next().charAt(0);
+       
+        if( (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+                    System.out.println(ch + " is an alphabet.");
+        }
+            else{
+                    System.out.println(ch + " is not an alphabet.");
+            }
+         if (ch >='0' && ch <='9'){
+           System.out.println(ch + " is an digit.");
+        }
+           else{
+             System.out.println(ch + " is an special symbol.");
+           }
+    }
+}
+
+
+10. WAP to check whether a character is uppercase or lowercase     alphabet.
+import java.util.Scanner;
+public class UpperLowerProgram
+{
+    public static void main(String args[])
+    {
+      char c;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter any  character");
+      c=s.next().charAt(0);
+      if (c>='a' && c<='z') {
+        System.out.println(c + " is an lower alphabet.");
+      }
+      else if(c >= 'A' && c <= 'Z'){
+        System.out.println(c + " is an  upper alphabet.");
+      }
+      else{
+        System.out.println(c + " is not an alphabet.");
+      }
+    }
+}
+
+11.WAP to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+
+import java .util.Scanner;
+public class MarksProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int physics,chemistry,biology,mathematics,computer,total_marks,percentage;
+    System.out.println("enter marks of physics,chemistry,biology,mathematics,computer");
+    physics=sc.nextInt();
+    chemistry=sc.nextInt();
+    biology=sc.nextInt();
+    mathematics=sc.nextInt();
+    computer=sc.nextInt();
+    total_marks=physics+chemistry+biology+mathematics+computer;
+    percentage=total_marks/500*100;
+    if (percentage >= 90){
+      System.out.println("grade A");
+    }
+    else if (percentage >= 80){
+      System.out.println("grade B");
+    }
+    else if (percentage >= 70){
+      System.out.println("grade C");
+    }
+    else if (percentage >= 60){
+      System.out.println("grade D");
+    }
+    else if(percentage >= 40){
+      System.out.println("grade E");
+    }
+    else{
+      System.out.println("grade F");
+    }
+  }
+}
+    
+12. WAP to input basic salary of an employee and calculate its Gross salary according to following:
+    Basic Salary <= 10000 : HRA = 20%, DA = 80%
+    Basic Salary <= 20000 : HRA = 25%, DA = 90%
+    Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+import java .util.Scanner;
+public class SalaryProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int basic,gross,hra,da;
+    System.out.println("enter basic salary");
+    basic=sc.nextInt();
+    if(basic <= 10000)
+    {
+      da  = basic * 80/100;
+      hra = basic * 20/100;
+    }
+    else if(basic <= 20000)
+    {
+      da  = basic * 90/100;
+      hra = basic * 25/100;
+    }
+    else
+    {
+      da  = basic * 95/100;
+      hra = basic * 30/100;
+    }
+    gross=basic+da+hra;
+    System.out.println("gross salary is="+ gross);
+  }
+}
