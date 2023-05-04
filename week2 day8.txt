@@ -1,0 +1,117 @@
+1.Create a simple game of rock-paper-scissors where the one player plays against the another player. Use conditional statements to determine the winner of each round. 
+import java.util.Scanner;
+class PlayerProgram {
+  public static void main(String[] args) {
+    int player1_Move,player2_Move;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the player1_Move and player2_Move");
+    player1_Move = sc.nextInt();
+    player2_Move =sc.nextInt();
+    if((player1_Move) == (player2_Move)){
+      System.out.println("tie");
+    }
+    else if(player1_Move==1 && player2_Move==3){
+      System.out.println("player 1 wins");
+    }
+    else if(player1_Move==2 && player2_Move==1){
+      System.out.println("player 1 wins");
+    }
+    else if(player1_Move==3 && player2_Move==1){
+      System.out.println("player 1 wins");
+    }
+    else{
+      System.out.println("player 2 wins");
+    }
+  } 
+}
+
+
+
+import java.util.Scanner;
+class Game_1{
+  public static void main(String[] args){
+    int player_1_Move,player_2_Move;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the player one move");
+    player_1_Move=sc.nextInt();
+    System.out.println("Enter the player two move");
+    player_2_Move=sc.nextInt();
+    if(((player_1_Move>=1)&&(player_1_Move<=3))&&((player_2_Move>=1)&&(player_2_Move<=3))){
+      switch(player_1_Move+player_2_Move){
+        case 2:
+          System.out.print("The game was tie");
+          break;
+        case 3:
+          if((player_1_Move==2)&&(player_2_Move==1)){
+            System.out.print("The player one is winner");
+          }
+          else{
+             System.out.print("The player two is winner");
+          }
+          break;
+        case 4:
+          if((player_1_Move==2)&&(player_2_Move==2)){
+            System.out.print("The game was tie");
+          }
+          else if((player_1_Move==1)&&(player_2_Move==3)){
+            System.out.print("The player one is winner");
+          }
+          else{
+            System.out.print("The player two is winner");
+          }
+          break;
+        case 5:
+          if((player_1_Move==3)&&(player_2_Move==2)){
+            System.out.print("The player one is winner");
+          }
+          else{
+            System.out.print("The player two is winner");
+          }
+          break;
+        case 6:
+           System.out.print("The game was tie");
+          break;
+      }
+    }
+    else{
+      System.out.print("Enter the valid move");
+    }
+  }
+}
+
+
+3.Write a program for week days 
+import java.util.Scanner;
+class WeekDayProgram {
+  public static void main(String[] args) {
+    int week_number;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the week number");
+    week_number = sc.nextInt();
+    switch (week_number) {
+      case 10-9:
+        System.out.println("Sunday");
+        break;
+      case 10-8:
+        System.out.println("Monday");
+        break;
+      case 10-7:
+        System.out.println("Tuesday");
+        break;
+      case 10-6:
+        System.out.println("Wednesday");
+        break;
+      case 10-5:
+        System.out.println("Thursday");
+        break;
+      case 10-4:
+        System.out.println("Friday");
+        break;
+      case 10-3:
+        System.out.println("Saturday");
+        break;
+      default:
+        System.out.println("Invalid week number entered");
+    }
+  }
+}
