@@ -1,0 +1,266 @@
+1.Create a simple game of rock-paper-scissors where the one player plays against the another player. Use conditional statements to determine the winner of each round. 
+
+import java.util.Scanner;
+public class SwitchPlayer1{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Welcome to Rock Paper Scissors");
+    System.out.println("enter player 1 move(1=Rock,2=Paper,3=Scissors):");
+    int player1Move=sc.nextInt();
+    if (player1Move<1 || player1Move>3){
+      System.out.println("Invalid Move.Please enter invalid move(1=Rock,2=Paper,3=Scissors):");
+        player1Move=sc.nextInt();
+      System.out.println(" enter player 2 move(1=Rock,2=Paper,3=Scissors):");
+    int player2Move=sc.nextInt();
+    }  
+    if (player2Move<1 || player2Move>3){
+      System.out.println("Invalid Move.Please enter invalid move(1=Rock,2=Paper,3=Scissors):");
+      int player1Move=sc.nextInt();
+    }
+    if (player1Move==player2Move){
+      System.out.println("tie");
+    }
+    else if(player1Move==1 && player2Move==3 || player1Move==2 && player2Move==1||player1Move==3 && player2Move==2){
+        System.out.println("player 1 wins");
+      }
+      else{
+      System.out.println("player 2 wins");
+      }
+  }
+}
+
+
+import java.util.Scanner;
+public class SwitchPlayer{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int player1_Move,player2_Move;
+    System.out.println("enter player 1's move(1=rock,2=paper,3=scissors");
+    player1_Move=sc.nextInt();
+    System.out.println("enter player 2's move(1=rock,2=paper,3=scissors");
+    player2_Move=sc.nextInt();
+    switch(player1_Move){
+      case 1:
+        switch(player2_Move){
+          case 1:
+            System.out.println("tie");
+            break;
+          case 2:
+            System.out.println("player 2 wins");
+            break;
+          case 3:
+            System.out.println("player 1 wins");
+            break;
+          default:
+            System.out.println("invalid move entered");
+            break;
+        }
+        break;
+      case 2:
+        switch(player2_Move){
+          case 1:
+            System.out.println("player 1 wins");
+            break;
+          case 2:
+            System.out.println(" tie");
+            break;
+          case 3:
+            System.out.println("player 2 wins");
+            break;
+          default:
+            System.out.println("invalid move entered");
+            break;
+        }
+        break;
+      case 3:
+        switch(player2_Move){
+          case 1:
+            System.out.println("player 2 wins");
+            break;
+          case 2:
+            System.out.println(" player 1 wins");
+            break;
+          case 3:
+            System.out.println("tie");
+            break;
+          default:
+            System.out.println("invalid move entered");
+            break;
+        }
+      default:
+        System.out.println("invalid move");
+        break;  
+        
+    }
+    
+  }
+}
+
+
+
+import java.util.Scanner;
+class PlayerProgram {
+  public static void main(String[] args) {
+    int player1_Move,player2_Move;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the player1_Move and player2_Move");
+    player1_Move = sc.nextInt();
+    player2_Move =sc.nextInt();
+    if((player1_Move) == (player2_Move)){
+      System.out.println("tie");
+    }
+    else if(player1_Move==1 && player2_Move==3){
+      System.out.println("player 1 wins");
+    }
+    else if(player1_Move==2 && player2_Move==1){
+      System.out.println("player 1 wins");
+    }
+    else if(player1_Move==3 && player2_Move==1){
+      System.out.println("player 1 wins");
+    }
+    else{
+      System.out.println("player 2 wins");
+    }
+  } 
+}
+
+//write a java program to read the boolean value and print the opposite value
+import java.util.Scanner;
+public class BooleanProgram{
+  public static void main(String[] args){
+    boolean n;
+    Scanner sc=new Scanner(System.in);
+    n=sc.nextBoolean();
+    if (n==true){
+      System.out.println("false");
+    }
+    else{
+      System.out.println("false");
+    }
+  }
+}
+
+
+
+2.write a java program to check whether a character is digit or not
+
+import java.util.Scanner;
+public class Program91Program
+{
+  public static void main(String args[])
+  {
+    char ch;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter any  character");
+    ch=sc.next().charAt(0);
+    if (ch >='0' && ch <='9'){
+      System.out.println(ch + " is an digit.");
+    }
+    else{
+      System.out.println(ch + " is not an digit");
+    }
+  }
+}
+
+3.to calculate sum of a number
+import java.util.Scanner;
+public class WhileExample1
+{
+  public static void main(String[] args){
+    int n,sum=0;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the value");
+    n=sc.nextInt();
+    while(n>0){
+       int digit=n%10;
+         sum=sum+digit;
+         n=n/10;
+    }
+    System.out.println("the sum is " +sum);
+  }
+}
+
+4.WAP to print all natural numbers from 1 to n. - using while loop
+import java.util.Scanner;
+public class WhileExample2{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n,i=1;
+    System.out.println("enter the n value");
+    n=sc.nextInt();
+    while(i<=n){
+    System.out.println(i);
+    i=i+1;
+    }
+  }
+}
+
+5.Program to print all natural numbers from 1 to n in reverse order - using while loop
+import java.util.Scanner;
+public class WhileExample3
+  {
+    public static void main(String[] args)
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the value of n");
+      int n=sc.nextInt();
+      int i=n;
+      while(i>1)
+        {
+          i=i-1;
+          System.out.println(i);
+        }
+    }
+  }
+
+
+6. WAP to print all alphabets from a to z. - using while loop
+import java.util.Scanner;
+class WhileExample4{
+  public static void main(String[] args){
+    char i='a';
+    while(i<='z'){
+      System.out.print(i+" ");
+      i++;
+    }
+  }
+}
+
+7. WAP to find sum of all even numbers between 1 to n.
+import java.util.Scanner;
+public class EvenProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n,i=2,sum=0;
+    System.out.println("enter n value");
+    n=sc.nextInt();
+    System.out.println("enter n value");
+    while(i<=n){
+      if (i%2==0){
+        sum=sum+i;
+        i=i+2;
+      }
+    }
+  System.out.println("sum of even numbers is="+sum);
+  }
+}
+
+
+8. WAP to find sum of all odd numbers between 1 to n.
+
+import java.util.Scanner;
+public class OddProgram{
+  public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    int n,i=1,sum=0;
+    System.out.println("enter n value");
+    n=sc.nextInt();
+    while(i<=n){
+      if (i%2!=0){
+        sum=sum+i;
+        i=i+2;
+      }
+    }
+  System.out.println("sum of even numbers is="+sum);
+  }
+}
