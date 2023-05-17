@@ -1,0 +1,32 @@
+jumping statements
+1.break
+2.continue
+
+1.break
+inside the loop and loop will be terminated.
+inside the switch and comes out of the switch.
+
+
+2.continue
+inside the loop can be exceuted.
+the exceution of the loop will be susoended for thar particular iteration and control goes to next iteration.
+
+
+Arrays;
+
+Need of arrays;
+1.storing the all values in a single array
+2.by using index values we can assign value
+3.Array is a group of elements having same data type.
+4.All the elements of the array can be stored in contiguous memeory locations.
+
+
+1.Declaring the array
+datatype[] array name; or datatype arrayname[]
+
+2.Initialization;
+datattype[] arrayname;
+arrayname=new datatype[length];
+
+
+Access the elements of the array
