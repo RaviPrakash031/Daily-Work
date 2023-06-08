@@ -1,0 +1,377 @@
+Differnces between the POP and OOP
+1.In POP the concentrate will be on procesdue and functions and in OOP the concentrate will on class and objects.
+2.if we want modify the code in POP we want to change the entire program and in OOP no need to change just create another class and objext
+3.In OOPS,the object to object communication done through methods and in
+4.In OOPS,data and methodsthat work on data will be combined into a single unit called class.
+
+
+Object-oriented programming 
+
+    •Object-oriented programming lets you extend a program without having to touch previously tested, working code
+    Object-oriented programming provides great flexibility, modularity and reusability through encapsulation, inheritance, and polymorphism
+
+​principles of  oops java
+Inheritance         
+Polymorphism
+Encapsulation
+Abstraction
+
+​1.Inheritance
+    Deriving new classes from existing classes such that the new classes acquire all the features of existing classes is called inheritance
+
+
+2.Polymorphism
+Ability to take more than one form
+it is used in implementing the inheritance.
+
+3.Encapsulation.
+the method and the method  work on data will be combines and that single unit is called as encapsulation and it will helps in secure the data and data hiding.
+
+4.Abstraction
+Hiding all the uncessary implementation details and only exposing only the required functionalities
+
+
+Object:
+object is a real world entitity and physically exists r logically 
+it has properties and atributes and it can do actions and identity.
+
+1.Software to develop online book store:
+Objects are book name ,type of book,racks,book colour ,name of author,
+Actions are read the book ,take the book and we can search books and buy the books
+
+objects-book 
+Atribute-Book name ,author of the book,type of book
+Actions-Add book ,change book,remove the book from site,identify the book exchange the bbok read and indrerstand the concept of the  book.
+
+
+Object:Website for open page
+Atribute -name of website ,login id,esername and password to open site 
+Actions-change the useranme and password of the site and create new username .
+
+Object-Order
+Atribute-order Id ,name of person who order,type of book ordered,order address
+Actions-change order,return order,siping  order,user take the  book return order,cancel order and exachange order.
+
+Object-Cost
+Atribute-cost Id ,price of the book,type of cost
+Actions-Increase decrease the cost,take the trancation by paying the money.
+
+which book we want 
+author of book
+search by using name of author
+user 
+who will take the book for reading and using
+search                
+searching the book for easy to find
+cart                  
+we can add and remove the books to cart
+order                 
+we can order the book and name and address who take the book
+trancation id                     
+cost and return the books transcation and payment id
+
+2.To develop SOftware Employee management system.
+
+object-employee
+atributes- employee name,ID,age ,gender,mobile ,email,usernme ,password and address 
+actions-add employee,delete,edit details ,save the details and  search the employee details
+
+object- Leaves
+attributes-leave ID,leave purpose ,how many days of leave,leave description,leave type ,leave empolyee id, 
+actions -adding leaves,take leaves ,permission for leave ,update leaves ,save leaves,search for how many leaves emplyee have .
+
+object-department
+atributes -name of department,no of persons in department,Department ID,purpose of department.
+actions -increase and decrease no of persons in department,change the department
+
+object-salary
+attributes-amounof salary,total salary ,salary type,salary name ,name of employee for given salary. 
+actions-add salary,remove salary for leaves,edit salary,save salary amount,bonus for more work.
+
+object-Employee experience
+Atributes-Experence ID,Experience employee Id,year of rmployee experience,experience description.
+Actions-Increase and decrease experience ,Save the employee experience,depend upon experience give salary
+
+Object - Employee Login 
+Atributes-Login Id ,Password,user name,login role ID
+Actions-Add no of logins,delete the logins,create username and password for login,update the details in the login
+
+Object -Employee Attendence
+Atributes-Attendence ID ,name of the Attendence Employee,Attendence Id,No of present and absent ,attendence description.
+Actions-Add attendece for salary,rdit attendence,save the attendence and search for enployeey attendence
+
+
+
+developing the social media App
+
+object-user
+Atributes-user name,login,Password,address ,profile.
+Action-create user name,reset password ,change profile and address.
+
+object-post
+Atributes-who created  like and dislike the post
+Actions-the post created ,modified ,changed ,liked and diskike the post
+
+
+object-comment
+Atributes-who wrote comment  like and dislike the comment
+Actions-we can write comment ,modified ,changed ,liked and diskike the comment
+
+object:-facebook
+attributes:-name,login page,posts,read,write.
+actions:-login,logout,chage password,add new user.
+
+object:-likes and dislikes
+attribute:-likes and dislikes,count of likes and  dislike.
+actions:-add new like,dislike,remove like and dilike
+
+objects are used to call the methods, The objects are created with new operator with the respective class name.
+
+Methods
+two types
+1.pre defined 
+2.user defined
+
+variables
+1.Instance variables
+(i)It will be declared outside of  a method or constructor or block but within class for every objects values will be change and 
+(ii)It will store default values when we dont give values
+(iii)it will be created at the time of object creation and will destroyyed when object is destriyed .
+it will be stored in Heap area
+accessing Objectname.variable name
+
+2.Static variables
+(i)Does not change values object to object for saving memory
+(ii)It will declared outside method and use static keyword and only one copy will be created and that will be shared all the objects of the class.
+(iii)It will be created at the time of the loading of the class and they will be destroyed when the class is unloaded. 
+it will be stored Method area or class area
+accessing Objectname.variable name or classname .variable name
+
+3.Local variables
+1.Inside the method can be used local variables and used for temperory
+2.when ur using have to initialize. 
+3.it will be stored in stack area.
+
+Types of methods
+1.setter or mutator
+setting the atributes from objects
+
+2.Accessor or getter methods
+getting the atributes from the objects
+
+Method Overloading
+changing the no of parameters and data types with out changing the reyturn type
+
+constructor
+If there are many creation of objects we need more values so by using this we will access the values in the object only for instance variables and it will not have return type.
+constructor name must have same class name  only.
+give the initial values for the instaance variables.
+at the time creating object of the class it will be called.
+
+
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+ 
+  public Student(String n, int i){
+    name=n;
+    id=i;
+  }
+  
+  public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+  
+}
+ 
+public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student("pavan",1);
+   
+    s1.talk();
+ 
+    Student s2= new Student("kumar",2);
+   
+    s2.talk();
+  }
+}
+
+Types of constructor
+1.no argumented constructor
+there are  no parameters in the constructor and it will get default paramaeters as a output
+ 
+Ex:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+public Student(){
+    
+ }
+public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student();
+   
+    s1.talk();
+ 
+
+2.parameterised constructor
+the parameters will be given to tha constructor and it will get the values in object creation.
+
+Example:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+ 
+  public Student(String n, int i){
+    name=n;
+    id=i;
+  }
+  
+  public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+  
+}
+ public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student("pavan",1);
+   
+    s1.talk();
+ 
+    Student s2= new Student("kumar",2);
+   
+    s2.talk();
+  }
+}
+
+3.default constructor
+if user dont give constructor then the  JvM  will take automatically by taking the defaulit parametters as a output.
+
+Example:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+ public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student();
+    s1.talk()
+
+
+
+Constructor Overloading
+two r more different types of  constructor with same names are used then it is over loadred constructor
+
+This method 
+it is used to refer the current object and it removes ambuigity or relation  between them.
+
+
+
+Keywords
+class 
+void 
+if 
+else 
+for 
+while 
+do
+switch
+break
+default
+case
+public
+private
+protected
+
+
+
+//program to illustrate usage of this keyword in constructor overloading 
+class Test
+{
+    Test() //no-arg constructor
+    {
+        this(10,20);
+    System.out.println("I am from Default Constructor");
+    }
+    Test(int x) //parameterized constructor
+    {
+        this(); //call the no-arg constructor
+        System.out.println("I am from Single Parameter Constructor");
+    
+    }
+    Test(int x, int y) //parameterized constructor
+    {
+        System.out.println("I am from Double Parameter Constructor");
+    }
+}
+class ThisConDemo
+{
+    public static void main(String args[])
+    {
+        Test t1 = new Test(10);
+    }
+}
+ 
+
+
+//program to illustrate this keyword
+//program to illustrate Passing this as an Argument
+ 
+class ThisExample {
+    // declare variables
+    int x;
+    int y;
+ 
+    ThisExample(int x, int y) {
+       // assign values of variables inside constructor
+        this.x = x;
+        this.y = y;
+ 
+        // value of x and y before calling add()
+        System.out.println("Before passing this to addTwo() method:");
+        System.out.println("x = " + this.x + ", y = " + this.y);
+ 
+        // call the add() method passing this as argument
+        add(this);
+ 
+        // value of x and y after calling add()
+        System.out.println("After passing this to addTwo() method:");
+        System.out.println("x = " + this.x + ", y = " + this.y);
+    }
+ 
+    void add(ThisExample o){
+        o.x += 2;
+        o.y += 2;
+    }
+}
+ 
+class Test4 {
+    public static void main( String[] args ) {
+        ThisExample obj = new ThisExample(1, -2);
+    }
+}
+
+
+
+​
+
+
+
+
+
+ 
+
+
+
+
+
+ 
