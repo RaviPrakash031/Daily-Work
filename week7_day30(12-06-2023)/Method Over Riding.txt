@@ -1,0 +1,110 @@
+Method Over Riding
+if the sub class method is same as the parent class and the statements are not same .
+
+final keyword 
+At varialbels, methods and classes
+
+final variable
+value will be fixes entire program and cannot change value.
+
+final method
+cannot used for overriden
+
+final class
+the class cannot be extends and inherited
+
+wraper class
+to convert from primitive to objects and vise virsa
+examples are wraper classes.
+
+
+object class
+Object class is a parent class of all classes and it will supports multilevel inheritance.
+
+Polymorphism
+1.compile time polymorphosim
+it can be achived by method overloading and same method and different parameters
+
+2.Runtime polymorphism
+it can be achieved by overriding and same method if the statements are not smae in program execution it will be done.
+
+
+it can be achieved by class and private and public 
+class is used as a single unit
+instance varaibel will make as private
+public is used setter and getter methods
+
+
+/*to implement encapsulation in java:
+1) Make the instance variables private so that they cannot be accessed directly from outside the class. You can only set and get values of these variables through the methods of the class.
+2) Have getter and setter methods in the class to set and get the values of the fields.
+ 
+  */
+ 
+ 
+class EncapsulationDemo{
+    private int ssn;
+    private String empName;
+    private int empAge;
+ 
+    //Getter and Setter methods
+    public int getEmpSSN(){
+        return ssn;
+    }
+ 
+    public String getEmpName(){
+        return empName;
+    }
+ 
+    public int getEmpAge(){
+        return empAge;
+    }
+ 
+    public void setEmpAge(int newValue){
+        empAge = newValue;
+    }
+ 
+    public void setEmpName(String newValue){
+        empName = newValue;
+    }
+ 
+    public void setEmpSSN(int newValue){
+        ssn = newValue;
+    }
+}
+public class EncapsulationTest{
+    public static void main(String args[]){
+         EncapsulationDemo obj = new EncapsulationDemo();
+         obj.setEmpName("pavan");
+         obj.setEmpAge(44);
+         obj.setEmpSSN(112233);
+      //The following comment lines gererate errors 
+    // System.out.println("Employee Name: " + obj.empName);
+    // System.out.println("Employee Age: " + obj.empAge);
+   //  System.out.println("Employee SSN: " + obj.ssn);
+      System.out.println("--------------");
+         System.out.println("Employee Name: " + obj.getEmpName());
+         System.out.println("Employee SSN: " + obj.getEmpSSN());
+         System.out.println("Employee Age: " + obj.getEmpAge());
+    } 
+}
+
+consrete methods
+it having declaration and implementtaion
+
+abstract method 
+having only declaration and use abstract keyword
+used for abstract class and method declaration
+
+Abstract classes 
+Having 0 and more concrete methods and 0 and more abstract metthods and it shiuld have abstract before class.
+and if we want to make one method as abstract the respected class must be abstract class.
+
+Interfaces
+Interfaces have same as classes but it contaain abstract methods  and default methods only.
+Interfaces will provide more sharebility and multiple inheritance can be achieved 
+abd variables are public static final.
+cant create constructor
+
+
+Abstraction
