@@ -1,0 +1,365 @@
+Concepts of OOPs
+Differnces between the POP and OOP
+1.In POP the concentrate will be on procesdue and functions and in OOP the concentrate will on class and objects.
+2.if we want modify the code in POP we want to change the entire program and in OOP no need to change just create another class and objext
+3.In OOPS,the object to object communication done through methods and in
+4.In OOPS,data and methodsthat work on data will be combined into a single unit called class.
+
+
+Object-oriented programming 
+
+    •Object-oriented programming lets you extend a program without having to touch previously tested, working code
+    Object-oriented programming provides great flexibility, modularity and reusability through encapsulation, inheritance, and polymorphism
+
+​principles of  oops java
+Inheritance         
+Polymorphism
+Encapsulation
+Abstraction
+
+​1.Inheritance
+    Deriving new classes from existing classes such that the new classes acquire all the features of existing classes is called inheritance
+code reusesability and code size reduced.
+
+* If there is is a relationship between the classes go for the inheritance.
+​Types of inheritance
+1.single inheritance -only parent class and child class
+2.Multiple inheritance-two parent classes and one child class
+3.multilevel inheritance-one grandparent ,parent and child
+4.Hirachical inheritance-one parent and two children
+5.Hybrid Inheritance-combination of all types
+
+
+
+2.Polymorphism
+Ability to take more than one form
+it is used in implementing the inheritance.
+example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
+
+3.Encapsulation.
+the method and the method  work on data will be combines and that single unit is called as encapsulation and it will helps in secure the data and data hiding.
+Example: a capsule, it is wrapped with different medicines.
+
+4.Abstraction
+Hiding all the uncessary implementation details and only exposing only the required functionalities
+Example: phone call, we don't know the internal processing.
+
+
+
+
+Object:
+object is a real world entitity and physically exists r logically 
+it has properties and atributes and it can do actions and identity.
+objects are used to call the methods, The objects are created with new operator with the respective class name.
+
+Methods
+two types
+1.pre defined 
+2.user defined
+
+variables
+1.Instance variables
+(i)It will be declared outside of  a method or constructor or block but within class for every objects values will be change and 
+(ii)It will store default values when we dont give values
+(iii)it will be created at the time of object creation and will destroyyed when object is destriyed .
+it will be stored in Heap area
+accessing Objectname.variable name
+
+2.Static variables
+(i)Does not change values object to object for saving memory
+(ii)It will declared outside method and use static keyword and only one copy will be created and that will be shared all the objects of the class.
+(iii)It will be created at the time of the loading of the class and they will be destroyed when the class is unloaded. 
+it will be stored Method area or class area
+accessing Objectname.variable name or classname .variable name
+
+3.Local variables
+1.Inside the method can be used local variables and used for temperory
+2.when ur using have to initialize. 
+3.it will be stored in stack area.
+
+Types of methods
+1.setter or mutator
+setting the atributes from objects
+
+2.Accessor or getter methods
+getting the atributes from the objects
+
+Method Overloading
+changing the no of parameters and data types with out changing the reyturn type
+
+constructor
+If there are many creation of objects we need more values so by using this we will access the values in the object only for instance variables and it will not have return type.
+constructor name must have same class name  only.
+give the initial values for the instaance variables.
+at the time creating object of the class it will be called.
+
+
+
+ 
+
+Types of constructor
+1.no argumented constructor
+there are  no parameters in the constructor and it will get default paramaeters as a output
+
+Ex:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+public Student(){
+    
+ }
+public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student();
+   
+    s1.talk();
+ 
+
+2.parameterised constructor
+the parameters will be given to tha constructor and it will get the values in object creation.
+
+Example:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+ 
+  public Student(String n, int i){
+    name=n;
+    id=i;
+  }
+  
+  public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+  
+}
+ public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student("pavan",1);
+   
+    s1.talk();
+ 
+    Student s2= new Student("kumar",2);
+   
+    s2.talk();
+  }
+}
+
+3.default constructor
+if user dont give constructor then the  JvM  will take automatically by taking the defaulit parametters as a output.
+
+Example:
+class Student{
+  String name; //instance variable
+  int id; //instance variable
+ public void talk(){
+    System.out.println("name is"+name);
+    System.out.println("id is"+id);
+  }
+public class Ex100{
+  public static void main(String[] args){
+    Student s1= new Student();
+    s1.talk()
+
+
+
+Constructor Overloading
+two r more different types of  constructor with same names are used then it is over loadred constructor
+
+This method 
+it is used to refer the current object and it removes ambuigity or relation  between them.
+
+Static keyword
+1.used for memory management and independent of the object we use static keyword
+2.used with variable,method,block and nested classes.
+3.it can access static data member and can change the value of it.
+4.it belongs to the class rarther than the object of the class.
+5.can not use not static data member or call non static method directly.
+6.static method belongs to the class.It can be invoked without the need for 7.creating an instance of a class.They cannot use non static memebers.
+
+static method:-static method access the static data and modifys it.
+static block-static block execute before execution of first  static method
+
+
+ØThe inherited fields can be used directly, just like any other fields.
+ØWe can declare new fields in the subclass that are not in the superclass.
+ØThe inherited methods can be used directly as they are.
+ØWe can write a new instance method in the subclass that has the same signature as the one in the superclass, thus overriding it .
+ØWe can declare new methods in the subclass that are not in the superclass.
+ØWe can write a subclass constructor that invokes the constructor of the superclass, either implicitly or by using the keyword super
+
+super keyword
+used to represent super class from sub class
+
+three ways
+1.refer the immediate parent class instance variables
+2.invoke immediate parent class method.
+3.super()
+used to invoke the immediate parent class constructor.
+it should be the first statement
+from the sub class can call super class it should be the first statement by using super.
+super class constructor cannot be caled in sub class methods 
+
+if there are no arguments contructor  in super class super is optional
+if there are parameterised constructed in super super is mandatory
+
+
+whenever subclass object need to be created
+1.first Jvm has to be loaded first super class bute code will br loaded to memory
+2.then loaded sub class.
+
+Method Over Riding
+if the sub class method is same as the parent class and the statements are not same .
+
+final keyword 
+At varialbels, methods and classes
+
+final variable
+value will be fixes entire program and cannot change value.
+
+final method
+cannot used for overriden
+
+final class
+the class cannot be extends and inherited
+
+wraper class
+to convert from primitive to objects and vise virsa
+examples are wraper classes.
+
+
+object class
+Object class is a parent class of all classes and it will supports multilevel inheritance.
+
+Polymorphism
+1.compile time polymorphosim
+it can be achived by method overloading and same method and different parameters
+
+2.Runtime polymorphism
+it can be achieved by overriding and same method if the statements are not smae in program execution it will be done.
+
+
+it can be achieved by class and private and public 
+class is used as a single unit
+instance varaibel will make as private
+public is used setter and getter methods
+
+
+/*to implement encapsulation in java:
+1) Make the instance variables private so that they cannot be accessed directly from outside the class. You can only set and get values of these variables through the methods of the class.
+2) Have getter and setter methods in the class to set and get the values of the fields.
+ 
+  */
+ 
+ 
+
+
+consrete methods
+it having declaration and implementtaion
+
+abstract method 
+having only declaration and use abstract keyword
+used for abstract class and method declaration
+
+Abstract classes 
+Having 0 and more concrete methods and 0 and more abstract metthods and it shiuld have abstract before class.
+and if we want to make one method as abstract the respected class must be abstract class.
+
+Interfaces
+Interfaces have same as classes but it contaain abstract methods  and default methods only.
+Interfaces will provide more sharebility and multiple inheritance can be achieved 
+abd variables are public static final.
+cant create constructor
+
+types of packsges
+1.predefined packages
+2.user defines packages
+
+Syntax:
+package package name
+class A
+{
+}
+
+compile:
+javac -d . classname.java
+
+import packagename.classname
+
+Acess modifiers
+Accessing or scope of class constructor and variables
+
+1.private-with in the class
+2.default-within the package
+3.protected-with packsge and outside package with in the child class only
+4.publoic it can access anywhere.
+
+
+Exception Handling
+it is an unexpected event that occur on execution program called as Exception Handling.
+Exceptions are exceptional/unusual/abnormal events that occur during the execution of programs that disrupts the normal flow of instructions
+and we need to handle the exception other wise it may cross operating system abnormally
+
+-the event the occurs during the program execution that will distrub the normal flow of program.
+
+ -to handle that exception we use exceptin handlings.
+
+-if we dont handle the exception the program terminates abnarmally and system may crash and several thing may happen
+
+
+Exception Handking keywords
+1.try-it is used in exception statements
+2.catch-to reduce the code exception
+throw
+throws-can thorw the exception cannot handle
+finally-The code in final block is written optional it is used to close the connections.and clean up actions.
+
+Exception Hirachy
+types exception
+1.checked 
+it is recognised at the compile time but they occour at runtime and shold be handled in the code otherwise it will give compile time error.
+
+
+Checked Exception is an exception recognized at compilation time, but, not occurred at compilation time
+Checked exceptions are those that must be caught or declared to be thrown.
+Checked exceptions should be handled in the code to avoid compile time errors.
+Java considers Throwable and any of its subclass that is not also a subclass of either RuntimeException or Error as checked exceptions
+
+unchecked exception
+-->Unchecked Exception is an exception which are not recognized at compilation time.they are run time exceptions.
+-->Unchecked exceptions are those that may be caught or not.
+ruuning time it will occur and recognised at compile time
+
+errors
+the unexpected erroer that is occured outside the application we cant do anything .
+unexcepted event occur outside the application due to lack of system resources.they are not in our hands
+
+
+
+custom Exception
+the exception is created by the user and by using throw and throws we wiil create exception
+Syntax:
+class InsufficientFundsException extends Exception{
+  InsufficientFundsException(String msg){
+    super(msg);
+  }
+
+
+Throw and Throws
+The throw keyword in Java is used to explicitly throw an exception from a method or any block of code.
+
+syntax:
+throw new ArithmeticException("/ by zero");
+
+
+Throws:
+throws is a keyword in Java that is used in the signature of a method to indicate that this method might throw one of the listed type exceptions. The caller to these methods has to handle the exception using a try-catch block. 
+
+Syntax:type method_name(parameters) throws exception_list
+
+
