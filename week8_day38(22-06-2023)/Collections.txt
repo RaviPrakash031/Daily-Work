@@ -1,0 +1,45 @@
+Collections
+For overcome the limitations of the arry it will be used.
+1.Size will not be fixed.
+2.it will store similar data types 
+3.we will methods.
+
+Group of objects of a single entity so we can go for the collections.
+
+A collection is also a container that gropus of multiple  objects stored in a single unit 
+Ex:List of emplyees,Shoping cart.
+
+
+Collections frame work
+It is frame work is a unified architecture for representimg and manipulating collections.
+Iterable -it will iterate the collections.
+collection-it is at the top of hierachy will collect all the interfaces like list,queue,set,map.
+
+
+Methods
+add(object o)
+addAll(colectiono) all the objects in clooection will be added and it will return true
+clear() it will remove all the elements in the object
+contains()- check weather collection is there are not it will return boolean
+
+
+List Interface
+Ordering among the objects  and the allowing the duplicate elements
+Methods of ListInterface
+Implementation class are
+
+1.ArrayList
+Dynamic memeory incease and decrease at runtime
+it contain duplicate implements and maintains insertion order.
+methods are ensure capacity() and trimSize()
+It index based and allow duplicate elements and follows insertion order and not synchronised and no thread safe
+
+It is not suitable for if u want to perform frequent insertion and deletion
+It is used for Frequent searching operations.
+
+
+
+2.LinkedList
+It provides a linked List datastructures
+It extends Abstract
+It is suitable for insertion and deletion in the middle of collections
