@@ -1,0 +1,62 @@
+Multi tasking
+1.process based multitasking
+many process is there in multitasking 
+
+2.thread based  Multitasking
+only single process is there but in that many several things and have different threads.
+
+MultiThreading
+The process of executing multiple threads simultaneously is called as MultiThreading
+
+Thread is a flow and path of the code execution that exists in a single process and is a light weight smallest part of the that can run with other process and it a independent because they all have share common memory.
+
+Advatages 
+1.saves time 
+2.independent if exceptiom occur it will not effect the other
+
+Applications
+Creation of games and server side programs to serve the multiple clients over the network.
+
+Creation of threads
+By using start() method we will create inside it will call the run() methods.
+ 
+Sleep()
+
+for temperortiy suspended the execution of the program until the sometime
+after time is where it is left there it will continue
+
+
+
+
+
+Thread Synchronisation
+controlling the accesing mechanism to the sharaable resource to the multiple threads .
+It can be achieved by using Synchronied block r method
+Thread Synchronization: the capability to control the access of multiple threads to any shared resource. 
+>>?Why use Synchronization?
+    1.To prevent thread interference.
+    2.To prevent data consistency problem.
+Synchronization is achieved with the help of:
+    1.Synchronized method.
+    2.Synchronized block.
+
+dead lock 
+it may occur when multiple threads are there two r more threads are there if they wait indefinitely to each other.
+If all the method are synchronized only deadlock will occure.
+
+
+Inter Thread Communication
+to communicate threads we use object class methods and these are declared as the final and used in only in synchronised block only otherwise exception occurs.
+they are
+1.wait()
+2.notify()
+3.notifyAll()
+
+wait()
+1.it will susspend the exceution of the program until it will notify the 2.thread by using notify or notifyAll  method will wake the thread
+3.it will relaese lock
+4.it will be called in synchronised methods or blocks only
+
+
+ 
+
